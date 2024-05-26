@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/Masterpages/myTree.Master" CodeBehind="myTree_app.master.cs" Inherits="myTree.WebForms.Master.myTree_app" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .radiobutton { padding-top:5px; }
+        .radiobutton label { margin-right:15px; }
+        .radiobutton input[type="radio"],input[type="checkbox"] { margin-top:-3px; margin-right:5px; }
+        .radiobutton label, input[type="radio"],input[type="checkbox"] { display: inline; }
+        div.control-group table { border: 1px solid #ddd; }
+        div.formFooter { margin:15px; }
+        div.admin-button-group { text-align: right; }
+        .form-horizontal .control-group 
+        {
+            margin-bottom: 10px !important;
+            padding-bottom: 10px !important;
+        }
+        .form-horizontal .control-label { padding-top: 2px; }
+    </style>
+
+    <asp:ContentPlaceHolder ID="AppHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
+    <div class="row-fluid">
+        <%
+            string appName = ConfigurationManager.AppSettings["App_Name"].ToString();
+            string appUrl = ConfigurationManager.AppSettings["App_Home_Url"].ToString().Trim();
+        %>
+
+        <!-- Header page. System Title & Current page Title -->
+        <div class="floatingBox">
+            <div class="containerHeadline">
+                <i class="icon-list-alt" style="margin-top:4px;margin-right:10px"></i>
+                <% if (appUrl != "")
+                   { %>
+                <a href='<%=appUrl %>'>
+                <% } %>
+                    <h4 style="margin:0px;color:#08c"><%=appName%></h4>
+                <% if (appUrl != "")
+                   { %>
+                </a>
+                <% } %>
+            </div>
+            <div class="container-fluid" style="padding:1px;">
+                <div class="filled success" style="margin-top:1px">
+                    <h3 style="margin:0px 5px" id="pageTitle"></h3>
+                    <script type="text/javascript">
+                        $("#pageTitle").html(document.title);
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- End of Header page -->
+
+        <asp:ContentPlaceHolder ID="AppBody" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

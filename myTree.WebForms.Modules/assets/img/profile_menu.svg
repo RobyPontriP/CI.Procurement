@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="burger-menu" transform="translate(8.000000, 10.000000)" fill="#FFFFFF">
+            <polygon id="Rectangle" points="0 0 6 0 6 2 0 2"></polygon>
+            <rect id="Rectangle" x="0" y="5" width="9" height="2"></rect>
+            <rect id="Rectangle" x="0" y="10" width="15" height="2"></rect>
+            <polygon id="Triangle" points="12.5 7 8 0 17 1.55431223e-15"></polygon>
+        </g>
+    </g>
+</svg>

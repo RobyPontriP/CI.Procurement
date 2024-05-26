@@ -1,0 +1,426 @@
+@import url('bootstrap.min.css');                   /* bootstrap css */
+@import url('font-awesome.min.css');                /* font awesome css */
+@import url('slider.css');                          /* bootstrap slider css */
+@import url('toggle-switch.css');                   /* toggler switch css */
+@import url('bootstrap-wysihtml5-0.0.2.css');       /* bootstrap wysiwyg css */
+@import url('theme.default.css');                   /* tablesorter css */
+@import url('bootstrap-editable.css');              /* bootstrap editable fields css */
+@import url('jquery.selectBoxIt.css');              /* selectBoxIt plugin css */
+@import url('colorpicker.css');             		/* colorpicker plugin css */
+@import url('datepicker.css');              		/* datepicker plugin css */
+@import url('jquery.jgrowl.min.css');              	/* jgrowl plugin css */
+@import url('bootstrap-tags.css');              	/* bootstrap tags css */
+@import url('colorbox.css');              			/* colorbox css */
+@import url('jquery-jvectormap-1.2.2.css');         /* vector maps plugin css */
+@import url('thekamarel.css');                      /* main project css */
+
+
+/* main responsive project css */
+
+/* ==========================================================================
+   These styles added by Dodi - http://diriyanto.com
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+
+    line-height: 16px;
+
+}
+
+.hiddenContent {
+    top: 78px;
+}
+
+div.row-fluid {
+    margin-bottom: 15px;
+}
+
+.home-icon {
+    border: 2px solid #676767;
+    border-radius: 100%;
+    font-size: 17px;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    width: 30px;
+}
+
+.sidebar-dark {
+    background: none repeat scroll 0 0 #545a5f;
+    color: #a4a4a4;
+}
+
+.sidebar-dark hr {
+    background-color: #eaeaea;
+    border: 0 none;
+    height: 1px;
+    margin-bottom: 20px;
+}
+
+.sidebar-dark a {
+    color: #FFFFFF;
+}
+
+.sidebar-dark a:hover {
+    color: #33b5e5;
+    text-decoration: none;
+}
+
+.sidebar-dark .widgets {
+    display: block;
+}
+
+.ads {
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 10px 20px;
+}
+
+.lead-text {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.highlight-title {
+    color: #000000;
+    float: left;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 0;
+    padding-right: 5px;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+
+.headlines {
+    height: 20px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+.headlines ul {
+    list-style: none;
+    margin-left: 5px;
+}
+
+.floatingBox.sidebar-dark .container-fluid {
+    padding: 23px 20px;
+}
+
+.event-item {
+    margin-bottom: 6px;
+}
+
+.e-title {
+    margin-bottom: 0;
+}
+
+.sidebar-title {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.logo-ct img {
+    background: none repeat scroll 0 0 #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+
+.img-pub > img {
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.pub-description {
+    margin-left: 41%;
+}
+
+.pub-item {
+    margin-bottom: 15px;
+}
+
+.pub-item p{
+    margin-bottom: 0;
+}
+
+a .pub-description .e-loc{
+    color: #a4a4a4;
+}
+
+.news-date {
+    color: #b0aeae;
+    font-weight: 600;
+}
+
+.floatingBox.floatingBox-ct > div.container-fluid {
+    padding: 16px;
+}
+
+.img-news {
+    float: left;
+    margin-right: 10px;
+    margin-top: 1px;
+    width: 27%;
+}
+
+.news-item .desc-news > h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.news-item {
+    margin-bottom: 15px;
+}
+
+.desc-news {
+    margin-left: 81px;
+}
+
+.latest-post {
+    margin-right: 8px;
+}
+
+.latest-post p, .offset .post{
+    margin-bottom: 0;
+}
+/*NALFAJRI 6 SEP 2014*/
+.latest-post-landing{
+	margin-right: 8px;
+}
+.latest-post=landing p, .offset .post{
+    margin-bottom: 0;
+}
+/*END NALFAJRI 6 SEP 2014*/
+
+.read-more-cat {
+    border-top: 1px solid #dedede;
+    padding-top: 12px;
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.offset-post.horizontal .news-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+}
+
+
+/* ==========================================================================
+   Listing Page - These styles added by Dodi Iriyanto- http://diriyanto.com
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+	line-height:normal;
+}
+
+.latest-post a img {
+    float: left;
+    width: 22%;
+}
+
+.latest-post{
+    list-style-type: none;
+}
+
+.post-desc {
+	margin-left: 24%;
+}
+
+.post-desc h4{
+    margin-top: 0;
+}
+
+.post-item {
+    border-bottom: 1px dotted #eaeaea;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.list-unstyled {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.categories-widget .list-unstyled span {
+    float: right;
+    width: auto;
+}
+
+.categories-widget .list-unstyled > li {
+    border-bottom: 1px solid #e1e1e1;
+    margin-top: 6px;
+    padding-bottom: 8px;
+}
+
+.categories-widget .list-unstyled > li:last-child {
+    border-bottom: medium none;
+}
+
+.back-tohome {
+    margin-top: 25px;
+}
+
+.back-tohome h5 {
+    margin-bottom: 0;
+}
+/* ==========================================================================
+   Single Post - These styles added by Dodi Iriyanto- http://diriyanto.com
+   ========================================================================== */
+
+.single-post .single-node {
+    margin: auto;
+    width: 85%;
+}
+
+.img-featured {
+    background: #f7f7f7;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.date-single{
+    color: #b0aeae;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.related-post {
+    margin-left: -3%;
+}
+
+.related-post-item {
+    display: inline-block;
+    margin-left: 3%;
+    vertical-align: top;
+    width: 21.5%;
+}
+
+.download { width: 100%; }
+.download  .wrap-button { width: 100px; float: left; }
+.download  p { width: 70%; float: left; }
+
+/* ==========================================================================
+   Responsive layout - These styles added by Dodi Iriyanto- http://diriyanto.com
+   ========================================================================== */
+.nav-collapseone.collapse{
+    height: auto;
+    overflow: visible;
+}
+
+.quick-link-button, .menu-btn-right{
+    display: none;
+}
+.floatingBox-ct .row-fluid {
+  margin-bottom: 0;
+}
+
+/* End of responsive layout - Dodi Iriyanto */
+
+/* ==========================================================================
+   Comment style - These styles added by Dodi Iriyanto- http://diriyanto.com
+   ========================================================================== */
+
+.comment-list > li {
+    border-bottom: 1px dotted #eaeaea;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+}
+
+.user-comment{
+    margin: 0 0 10px;
+}
+
+.user-comment > li {
+    display: inline-block;
+}
+
+.user-comment a {
+    color: #666666;
+}
+
+.user-comment img {
+    margin-right: 8px;
+}
+
+/* ==========================================================================
+   Library style - These styles added by Dodi Iriyanto- http://diriyanto.com
+   ========================================================================== */
+
+.quick-link-lib {
+    margin-left: -30px !important;
+}
+
+.quick-link-lib > li {
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
+    width: auto;
+}
+
+.quick-link-lib li a {
+    display: block;
+}
+
+.publication-list-library, .publication-1-list-library{
+    margin-left: -1%;
+}
+
+.publication-1-list-library .pub-item {
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: top;
+    width: 48%;
+}
+
+.publication-list-library .pub-item {
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: top;
+    width: 30%;
+}
+
+.collection-list-library {
+    margin-left: -1%;
+}
+
+.collection-list-library .pub-item {
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: top;
+    width: 48%;
+}
+
+.publication-list-library .pub-item .e-loc, .collection-list-library .pub-item .e-loc, .publication-1-list-library .pub-item .e-loc{
+    color: #666666;
+}
+
+.m-margin-top-6{
+    margin-top: 2px !important;
+}
+
+.sidebar-dark h3, .sidebar-dark h4, .sidebar-dark h5, .sidebar-dark h6, .sidebar-dark h7{
+    color: #ffffff;
+}
+
+.user-pan{
+    margin-bottom: 15px;
+}
+
+.user-pan .widgets{
+    margin-left: 10px;
+}

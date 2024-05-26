@@ -1,0 +1,14 @@
+.travel-container { width:100%; overflow:auto; margin:0 auto; font-size:12px; }
+.travel-graph { background: url(/Workspace/Style_CIFORWorkspace/img/travel.png) no-repeat center; width:570px; height:43px; margin:0 auto; padding:105px 0 0 30px; }
+
+.section { width:96px; height:24px; float:left; text-align:center; margin-right: 18px; font-weight:bold; }
+.section a { text-decoration:none; color:#fff; display:block; width:96px; height:22px; padding-top:2px; }
+.section.travel-perdiem  a { color:#000; }
+
+.section.travel-plan  a:hover { background-color:#ffa00e; }
+.section.travel-request  a:hover { background-color:#7caf00; }
+.section.travel-claim  a:hover { background-color:#16a5d7; }
+.section.travel-report  a:hover { background-color:#292929; }
+.section.travel-perdiem  a:hover { background-color:#e8e8e8; }
+
+.travel-content { overflow:auto; width:100%; }

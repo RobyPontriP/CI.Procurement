@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="myCIFOR.master.cs" Inherits="myTree.WebForms.Master.Masterpages.myCIFOR" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+    <link rel="stylesheet" href="~/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="~/assets/css/colorbox.css">
+    <link rel="stylesheet" href="~/assets/css/bootstrap-responsive.min.css">
+	<link href='~/assets/css/font-googleapis.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="~/assets/css/styles.css">
+    <link rel="stylesheet" href="~/assets/css/thekamarel-responsive.css">
+    <link rel="stylesheet" href="~/assets/css/pmo.css">
+    <link rel="stylesheet" href="~/assets/css/travel.css">
+    <link rel="stylesheet" href="~/assets/css/org-chart.css">
+    <link rel="stylesheet" href="~/assets/css/mmenu.css">
+    <link rel="stylesheet" href="~/assets/css/org-chart.css">
+    <link rel="stylesheet" href="~/assets/css/li-scroller/li-scroller.css">
+    <link rel="stylesheet" href="~/assets/lighthouse/fab.css" />
+	
+	<script src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+     <script src="/assets/js/vendor/bootstrap-slider.js"></script>
+    <!-- bootstrap slider plugin -->
+    <script src="/assets/js/vendor/jquery.sparkline.min.js"></script>
+    <!-- small charts plugin -->
+    <script src="/assets/js/vendor/jquery.flot.min.js"></script>
+    <!-- charts plugin -->
+    <script src="/assets/js/vendor/jquery.flot.resize.min.js"></script>
+    <!-- charts plugin / resizing extension -->
+    <script src="/assets/js/vendor/jquery.flot.pie.min.js"></script>
+    <!-- charts plugin / pie chart extension -->
+    <script src="/assets/js/vendor/wysihtml5-0.3.0_rc2.min.js"></script>
+    <!-- wysiwyg plugin -->
+    <script src="/assets/js/vendor/bootstrap-wysihtml5-0.0.2.min.js"></script>
+    <!-- wysiwyg plugin / bootstrap extension -->
+    <script src="/assets/js/vendor/bootstrap-tags.js"></script>
+    <!-- multivalue input tags -->
+    <script src="/assets/js/vendor/jquery.tablesorter.min.js"></script>
+    <!-- tablesorter plugin -->
+    <script src="/assets/js/vendor/jquery.tablesorter.widgets.min.js"></script>
+    <!-- tablesorter plugin / widgets extension -->
+    <script src="/assets/js/vendor/jquery.tablesorter.pager.min.js"></script>
+    <!-- tablesorter plugin / pager extension -->
+    <script src="/assets/js/vendor/raphael.2.1.0.min.js"></script>
+    <!-- vector graphic plugin / for justgage.js -->
+    <script src="/assets/js/vendor/justgage.js"></script>
+    <!-- justgage plugin -->
+    <script src="/assets/js/vendor/bootstrap-multiselect.js"></script>
+    <!-- multiselect plugin -->
+    <script src="/assets/js/vendor/bootstrap-datepicker.js"></script>
+    <!-- datepicker plugin -->
+    <script src="/assets/js/vendor/bootstrap-colorpicker.js"></script>
+    <!-- colorpicker plugin -->
+    <script src="/assets/js/vendor/parsley.min.js"></script>
+    <!-- parsley validator plugin -->
+    <script src="/assets/js/vendor/formToWizard.js"></script>
+    <!-- form wizard plugin -->
+    <script src="/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap-editable.min.js"></script>
+    <script src="/assets/js/vendor/jquery.blockUI.js"></script>
+    <!-- editable fields plugin -->
+    <script src="/assets/js/thekamarel.js"></script>
+    <script src="/assets/js/vendor/jquery.colorbox.js"></script>
+    <script src="/assets/js/plugins/js/quickpager.jquery.js"></script>
+	<script src="/assets/js/pmo.js"></script>
+    <script src="/assets/js/jquery-dateFormat.js"></script>
+	<script src="/assets/js/org-chart.js"></script>
+    <script src="/assets/js/vendor/doubletaptogo.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
+	<script src="/assets/lighthouse/fab.js""></script>
+    <script src="/assets/js/masterpage.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid" style="margin-top:25px;">
+        <div class="row-fluid">
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let refreshURL = "<%=RefreshURL%>";
+    </script>
+</body>
+</html>

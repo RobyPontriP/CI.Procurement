@@ -1,0 +1,187 @@
+﻿.control-group.required .control-label:after {
+    content: " * ";
+    color: red;
+}
+
+th.required:after {
+    content: " * ";
+    color: red;
+}
+
+.dt-body-right {
+    text-align: right!important;
+}
+
+#upBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #99CC00;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#upBtn:hover {
+    background-color: #555;
+}
+
+span.label {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+}
+
+.label {
+    cursor: auto;
+}
+
+.number {
+    text-align: right;
+}
+
+.icon-calendar{
+    cursor: pointer;
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 50% !important;
+    transform: translate(0, -50%) !important;
+    -ms-transform: translate(0, -50%) !important;
+    -webkit-transform: translate(0, -50%) !important;
+    margin: auto 2%;
+    width: 80%;
+    height: 512px;
+    left: 10% !important;
+}
+
+.modal-content {
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-body {
+    position: absolute;
+    top: 72px; /** height of header **/
+    bottom: 50px; /** height of footer **/
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.doc-notes {
+    font-size: 80%;
+    font-style: italic;
+    display: block;
+    /*margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;*/
+}
+
+.doc-notes-justification {
+    font-size: 80%;
+    font-style: italic;
+    display: block;
+    /*margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;*/
+}
+
+.journal-notes {
+    font-size: 80%;
+    font-style: italic;
+    display: block;
+    /*margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;*/
+}
+
+.other_purchase_type_notes {
+    font-size: 80%;
+    font-style: italic;
+    display: block;
+    /*margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;*/
+}
+
+.perform_purchase_notes {
+    font-size: 80%;
+    font-style: italic;
+    display: block;
+    /*margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;*/
+}
+
+.cash_advance_notes {
+    font-size: 120%;
+    font-style: italic;
+    display: block;
+    /*margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;*/
+}
+
+.reference-notes {
+    font-size: 80%;
+    font-style: italic;
+    display: block;
+    /*margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;*/
+}
+
+/*
+.tabContainer .container-fluid {
+    padding-left: 7px;
+    padding-right: 7px;
+}*/
+
+.labelDetail {
+    padding-top: 5px;
+}
+
+.dropDetail {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.dropAllDetail {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.dropDetailCC {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.wrapCol {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.textareavertical {
+    resize: vertical;
+}
+

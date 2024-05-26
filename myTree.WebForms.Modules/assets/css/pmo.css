@@ -1,0 +1,55 @@
+.pmo-container { width:100%;overflow:auto;margin:0 auto;color:#ffffff;font-size:22px;padding-bottom:100px; }
+.pmo-graph { background: url(/Workspace/Style_CIFORWorkspace/img/pmslogo.png) no-repeat center;width:432px;height:310px;margin:0 auto; }
+/*.pmo-graph { background: url(pmslogo.png) no-repeat center;width:432px;height:310px;margin:0 auto; }*/
+
+.pmo-proposal-ph { width:128px;height:41px;position:relative;top:8px;left:196px; }
+a.pmo-proposal-link { display:block;width:126px;height:31px;padding-top:8px;text-align:center;color:#ffffff;text-decoration:none;border:1px solid #fcbd00;background-color:#fcbd00; }
+a.pmo-proposal-link:hover { background-color:#fa9c00;border:1px solid #f99b00;border-bottom-left-radius:10px; }
+
+.pmo-other-ph { width:98px;height:41px;position:relative;top:110px;left:170px; }
+a.pmo-other-link { display:block;width:96px;height:31px;padding-top:8px;text-align:center;color:#ffffff;text-decoration:none;border:1px solid #393839;background-color:#393839; }
+a.pmo-other-link:hover { background-color:#393839;border:1px solid #393839;border-bottom-left-radius:10px; }
+
+.pmo-project-ph { width:102px;height:41px;position:relative;top:107px;left:7px; }
+a.pmo-project-link { display:block;width:100px;height:31px;padding-top:8px;text-align:center;color:#ffffff;text-decoration:none;border:1px solid #45b4eb;background-color:#45b4eb; }
+a.pmo-project-link:hover { background-color:#2798d3;border:1px solid #2798d3;border-bottom-right-radius:10px;border-top-right-radius:10px; }
+
+.pmo-contract-ph { width:122px;height:42px;position:relative;top:96px;left:302px; }
+a.pmo-contract-link { display:block;width:120px;height:32px;padding-top:8px;text-align:center;color:#ffffff;text-decoration:none;border:1px solid #a3d400;background-color:#a3d400; }
+a.pmo-contract-link:hover { background-color:#459f00;border:1px solid #459f00;border-bottom-left-radius:10px;border-top-left-radius:10px; }
+
+.click-nav ul { margin:0;padding:0; }
+.click-nav ul li { position:relative;list-style:none;cursor:pointer;margin:0;padding:0; }
+.click-nav ul ul {
+	font-size:16px;
+	width: 150px;
+	border: 1px solid #666;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 5px;
+	z-index:999;
+	padding: 5px 0;
+	background-clip: padding-box;
+	display:block;
+	background:#FFF;
+}
+.click-nav ul ul li a {
+	transition:background-color 0.2s ease-in-out;
+	-webkit-transition:background-color 0.2s ease-in-out;
+	-moz-transition:background-color 0.2s ease-in-out;
+	display:block;padding:5px;
+	color:#333;
+	text-decoration:none;
+}
+.click-nav ul ul li a:hover { background:#999; }
+.arrowup { background: url(/Workspace/Style_CIFORWorkspace/img/collapsed.png) no-repeat right center; }
+.arrowdown { background: url(/Workspace/Style_CIFORWorkspace/img/expanded.png) no-repeat right center; }
+
+.pmo-head-section { display:block; width:100%; padding:5px 0; background-color:#ddd; }
+.pmo-head-title { font-size: 18px; }
+.gotolink { cursor: pointer; }
+
+/* Fallbacks */
+.pmo-graph .no-js ul { display:none; }
+.pmo-graph .no-js:hover ul { display:block; }

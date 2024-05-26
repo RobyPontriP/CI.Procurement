@@ -1,0 +1,565 @@
+.boxer {
+           display: table;
+           border-collapse: collapse;
+           width:100%;
+        }
+ 
+        .boxer .box-row {
+           display: table-row;
+        }
+ 
+        .box {
+           display: table-cell;
+           text-align: left;
+           vertical-align: top;
+           border: 0px solid black;
+        }
+        .middle {
+           /*display: table-cell;
+           text-align: left;*/
+           vertical-align: top;
+           border: 0px;
+           margin: 0 auto;
+        }
+        
+        #btn_bot{
+            top:24px;
+            left:370px;
+        }
+        
+        #btn_bot > .btn
+        {
+            width: 163px; 
+            height: 41px;
+        }
+        
+        #btn_bot > .dropdown-toggle
+        {
+            width: 26px;
+            height: 41px;
+        }
+        
+        #btn_dgo
+        {
+            top:38px;
+            left:339px;
+        }
+        
+        #btn_dgo > .btn
+        {
+            width: 220px; 
+            height: 41px;
+        }
+        
+        #btn_dgo > .dropdown-toggle
+        {
+            width: 26px;
+            height: 41px;
+        }
+        
+        #btn_crp
+        {
+            top:74px;
+            left :30px; 
+        }
+        
+        #btn_crp > .btn
+        {
+            width: 103px; 
+            height: 41px;
+        }
+        
+        #btn_crp > .dropdown-toggle
+        {
+            width: 26px;
+            height: 41px;
+        }
+        
+        
+        #btn_dy
+        {
+            top:74px;
+            left :75px; 
+        }
+        
+        #btn_dy > .btn
+        {
+            width: 227px; 
+            height: 41px;
+        }
+        
+        #btn_dy > .dropdown-toggle
+        {
+            width: 26px;
+            height: 41px;
+        }
+        
+        
+        #btn_ins
+        {
+            top:74px;
+            left :87px; 
+        }
+        
+        #btn_ins > .btn
+        {
+            width: 181px; 
+            height: 41px;
+        }
+        
+        #btn_rsc
+        {
+            top:74px;
+            left :153px; 
+        }
+        
+        #btn_rsc > .btn
+        {
+            width: 107px; 
+            height: 41px;
+        }
+        
+        
+        #btn_cross
+        {
+            top:90px;
+            left:118px;
+        }
+        
+         #btn_cross > .btn
+        {
+            width: 102px; 
+            height: 29px;
+        }
+        
+        #btn_cross > .dropdown-toggle
+        {
+            width: 26px;
+            height: 29px;
+        }
+        
+        
+        
+        #btn_hosted
+        {
+            top:88px;
+            left:221px;
+        }
+        
+         #btn_hosted > .btn
+        {
+            width: 154px; 
+            height: 27px;
+        }
+        
+        #btn_hosted > .dropdown-toggle
+        {
+            width: 26px;
+            height: 27px;
+        }
+        
+        
+        #btn_com
+        {
+            top:97px;
+            left:276px;
+        }
+	
+	
+        
+        #btn_com > .btn
+        {
+            width: 129px; 
+            height: 55px;
+			white-space: normal;
+        }
+
+        #btn_com > .dropdown-toggle
+        {
+            width: 26px;
+            height: 55px;
+        }
+        
+        #btn_env
+        {
+            top:84px;
+            left:333px;    
+        }
+        
+        #btn_env > .btn
+        {
+            width: 131px; 
+            height: 28px;
+        }
+        
+        #btn_env > .dropdown-toggle
+        {
+            width: 26px;
+            height: 28px;
+        }
+        
+        #btn_flg
+        {
+            top:81px;
+            left:119px;
+            position:relative;
+        }
+        
+         #btn_flg > .btn
+        {
+            width: 76px; 
+            height: 28px;
+        }
+        
+        #btn_flg > .dropdown-toggle
+        {
+            width: 26px;
+            height: 28px;
+        }
+        
+        #btn_hub
+        {
+            top:84px;
+            left:247px;
+            position:relative;
+        }
+        
+        #btn_hub > .btn
+        {
+            width: 64px; 
+            height: 28px;
+        }
+        
+        #btn_hub > .dropdown-toggle
+        {
+            width: 26px;
+            height: 28px;
+        }
+        
+        #btn_fna
+        {
+            top:118px;
+            left:392px;
+            position:relative;
+        }
+        
+        #btn_fna > .btn
+        {
+            width: 135px; 
+            height: 56px;
+			white-space: normal;
+        }
+        
+        #btn_fna > .dropdown-toggle
+        {
+            width: 20px;
+            height: 56px;
+        }
+        
+        #btn_gov
+        {
+            top:76px;
+            left:447px;
+            position:relative;
+        }
+        
+        #btn_gov > .btn
+        {
+            width: 131px; 
+            height: 28px;
+        }
+        
+        #btn_gov > .dropdown-toggle
+        {
+            width: 26px;
+            height: 28px;
+        }
+        
+        #btn_msu
+        {
+            top:73px;
+            left:120px;
+            position:relative;   
+        }
+        
+        #btn_msu > .btn
+        {
+            width: 143px; 
+            height: 29px;
+        }
+        
+        #btn_msu > .dropdown-toggle
+        {
+            width: 26px;
+            height: 29px;
+        }
+        
+        #btn_mne
+        {
+            top:89px;
+            left:179px;
+            position:relative;      
+        }
+        
+        #btn_mne > .btn
+        {
+            width: 154px; 
+            height: 56px;
+			white-space: normal;
+        }
+        
+        #btn_mne > .dropdown-toggle
+        {
+            width: 26px;
+            height: 56px;
+        }
+        
+        #btn_hr
+        {
+            top:123px;
+            left:236px;
+            position:relative; 
+        }
+        
+        #btn_hr > .btn
+        {
+            width: 107px; 
+            height: 28px;
+        }
+        
+        #btn_hr > .dropdown-toggle
+        {
+            width: 26px;
+            height: 28px;
+        }
+        
+        #btn_liv
+        {
+            top:68px;
+            left:313px;
+            position:relative; 
+        }
+        
+        #btn_liv > .btn
+        {
+            width: 131px; 
+            height: 28px;
+        }
+        
+        #btn_liv > .dropdown-toggle
+        {
+            width: 26px;
+            height: 28px;
+        }
+        
+        #btn_sco
+        {
+            top:108px;
+            left:356px;
+            position:relative; 
+        }
+        
+        #btn_sco > .btn
+        {
+            width: 154px; 
+            height: 28px;
+        }
+        
+        #btn_sco > .dropdown-toggle
+        {
+            width: 26px;
+            height: 28px;
+        }
+        
+        #btn_rd
+        {
+            top:129px;
+            left:411px;
+            position:relative; 
+        }
+        
+        #btn_rd > .btn
+        {
+            width: 143px; 
+            height: 28px;
+        }
+        
+        #btn_rd > .dropdown-toggle
+        {
+            width: 26px;
+            height: 28px;
+        }
+        
+        .org-chart
+        {
+            background-image:url('/webgeneral/img/org.png'); 
+            background-repeat:no-repeat; 
+            width:100%;
+            height:500px
+        }
+        .div-row
+        {
+            display:table-row;    
+        }
+	
+	/* FOR CHROME ONLY [NALFAJRI]*/
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		#btn_hosted
+		{
+            top:89px;
+            left:226px;
+        }
+		
+		#btn_hub
+		{
+            top:85px;
+            left:250px;
+            position:relative;
+        }
+		
+		 #btn_mne
+		{
+            top:90px;
+            left:183px;
+            position:relative;      
+        }
+		
+		#btn_sco
+		{
+            top:108px;
+            left:357px;
+            position:relative; 
+        }
+		
+		#btn_com
+		{
+			top:97px;
+            left:282px;
+		}
+		
+		 #btn_fna
+		{
+            top:118px;
+            left:398px;
+            position:relative;
+        }
+		
+		#btn_hr
+		{
+            top:123px;
+            left:242px;
+            position:relative; 
+        }
+		
+		#btn_rd
+		{
+            top:129px;
+            left:414px;
+            position:relative; 
+        }
+		
+		 #btn_env
+		{
+            top:85px;
+            left:342px;    
+        }
+		
+		#btn_env > .btn
+		{
+            width: 137px; 
+            height: 32px;
+        }
+        
+        #btn_env > .dropdown-toggle
+		{
+            width: 26px;
+            height: 32px;
+        }
+		
+		#btn_gov
+		{
+            top:78px;
+            left:458px;
+            position:relative;
+        }
+        
+        #btn_gov > .btn
+		{
+            width: 137px; 
+            height: 32px;
+        }
+        
+        #btn_gov > .dropdown-toggle
+		{
+            width: 26px;
+            height: 32px;
+        }
+		
+		#btn_liv
+		{
+            top:70px;
+            left:324px;
+            position:relative; 
+        }
+        
+        #btn_liv > .btn
+		{
+            width: 137px; 
+            height: 32px;
+        }
+        
+        #btn_liv > .dropdown-toggle
+		{
+            width: 26px;
+            height: 3	2px;
+        }
+		
+		 #btn_ins
+		{
+            top:74px;
+            left :93px; 
+        }
+     
+        #btn_rsc
+		{
+            top:74px;
+            left :160px; 
+        }
+
+
+#btn_bot_1 { height:42px; width: 166px; white-space:inherit; }
+/* #btn_bot_1 { height:42px; width: 166px; } */
+#btn_bot_2 { height:42px; width: 27px; }
+#btn_dgo_1 { height:42px; width: 225px; }
+#btn_dgo_2 { height:42px; width: 27px; }
+#btn_cer_1 { height:57px; width: 132px; }
+#btn_cer_2 { height:57px; width: 26px; }
+#btn_ddg_1 { height:41px; width: 231px; }
+#btn_ddg_2 { height:41px; width: 26px; }
+#btn_res_1 { height:41px; width: 109px; }
+#btn_peru_1 { height:28px; width: 184px; }
+#btn_env_1 { height:30px; width: 148px; }
+#btn_env_2 { height:30px; width: 26px; }
+#btn_fna_1 { height:57px; width: 132px; }
+#btn_fna_2 { height:57px; width: 26px; }
+#btn_kenya_1 { height:28px; width: 184px; }
+#btn_env_1 { height:30px; width: 148px; }
+#btn_env_2 { height:30px; width: 26px; }
+#btn_hrd_1 { height:57px; width: 132px; }
+#btn_hrd_2 { height:57px; width: 26px; }
+#btn_cam_1 { height:28px; width: 184px; }
+#btn_liv_1 { height:28px; width: 148px; }
+#btn_liv_2 { height:28px; width: 26px; }
+#btn_sco_1 { height:28px; width: 184px; }
+#btn_rdt_1 { height:57px; width: 132px; }
+#btn_rdt_2 { height:57px; width: 26px; }
+#btn_pmo_1 { height:57px; width: 132px; }
+#btn_pmo_2 { height:57px; width: 26px; }
+
+button[id^="btn_"] { white-space: initial; }
+
+#Table_01 { line-height: 0.5; }
+/* #Table_01 td { line-height: 1; } */
+
+	}
+	

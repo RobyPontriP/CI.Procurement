@@ -1,0 +1,32 @@
+.tickercontainer { /* the outer div with the black border */
+width: 1024px;
+height: 20px;
+margin: 0 !important;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+position: relative;
+top: 2px;
+height: 18px;
+/*width: 718px;*/
+overflow: hidden;
+margin-top:0px !important;
+background-color: red;
+}
+ul.newsticker { /* that's your list */
+position: relative;
+/*left: 750px;*/
+font: bold 10px Verdana;
+list-style-type: none;
+margin: 0;
+padding: 0;
+color: #fff;
+}
+ul.newsticker li {
+float: left; /* important: display inline gives incorrect results when you check for elem's width */
+margin: 0;
+padding-right: 15px;
+/*background: #fff;*/
+}

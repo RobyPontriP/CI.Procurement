@@ -1,0 +1,370 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="myTree_example.Master.cs" Inherits="myTree.WebForms.Master.myTree_example" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- style reference -->
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/css/bootstrap-theme.css") %>" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/css/bootstrap.css") %>" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/css/other.css") %>" media="screen" />
+
+    <!-- javascript reference -->
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/jquery.js") %>"></script>
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/bootstrap.js") %>"></script>
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/html5shiv.js") %>"></script>
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/respond.js") %>"></script>
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/custom.js") %>"></script>
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/jquery.sparkline.min.js") %>"></script>
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/doubletaptogo.min.js") %>"></script>
+
+    <!-- additional resource -->
+    <!-- jquery ui -->
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/js/jquery-ui/jquery-ui.min.css") %>" media="screen" />
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/jquery-ui/jquery-ui.min.js") %>"></script>
+
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/masterpage.js") %>"></script>
+
+    <!-- jquery chosen (for beauty combobox) -->
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/js/chosen/chosen.min.css") %>" media="screen" />
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/chosen/chosen.jquery.min.js") %>"></script>
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/chosen/chosen.ajaxaddition.jquery.js") %>"></script>
+
+    <!-- accounting.js (for money formating) -->
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/accounting.js") %>"></script>
+
+    <!-- date duration -->
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/moment.js") %>"></script>
+
+    <!-- jquery chosen (for beauty combobox) -->
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/js/jalert/jquery.alerts.css") %>" media="screen" />
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/jalert/jquery.alerts.js") %>"></script>
+
+    <!-- jquery colorbox (for beauty popup dialog)-->
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/css/colorbox.css") %>" media="screen" />
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/jquery.colorbox.js") %>"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/css/mmenu.css") %>" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/css/thekamarel.css") %>" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<%=Page.ResolveUrl("~/assets/css/thekamarel-responsive.css") %>" media="screen" />
+
+    <script type="text/javascript" src="<%=Page.ResolveUrl("~/assets/js/thekamarel.js") %>"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />--%>
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--%>
+    <%--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>--%>
+
+    <style type="text/css">
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -1px;
+            }
+
+            .dropdown-submenu:hover > .dropdown-menu {
+                display: block;
+            }
+
+        .dropdown-large {
+            position: static !important;
+        }
+
+        .dropdown-menu-large {
+            margin-left: 16px;
+            margin-right: 16px;
+            padding: 20px 0px;
+            left: 0;
+            right: 0;
+        }
+
+            .dropdown-menu-large > li > ul {
+                padding: 0;
+                margin: 0;
+            }
+
+                .dropdown-menu-large > li > ul > li {
+                    list-style: none;
+                }
+
+                    .dropdown-menu-large > li > ul > li > a {
+                        display: block;
+                        padding: 3px 20px;
+                        clear: both;
+                        font-weight: 300;
+                        line-height: 1.428571429;
+                        color: #333333;
+                        white-space: normal;
+                    }
+
+            .dropdown-menu-large > li ul > li > a:hover,
+            .dropdown-menu-large > li ul > li > a:focus {
+                text-decoration: none;
+                color: #262626;
+                background-color: #f5f5f5;
+            }
+
+            .dropdown-menu-large .disabled > a,
+            .dropdown-menu-large .disabled > a:hover,
+            .dropdown-menu-large .disabled > a:focus {
+                color: #999999;
+            }
+
+                .dropdown-menu-large .disabled > a:hover,
+                .dropdown-menu-large .disabled > a:focus {
+                    text-decoration: none;
+                    background-color: transparent;
+                    background-image: none;
+                    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+                    cursor: not-allowed;
+                }
+
+            .dropdown-menu-large .dropdown-header {
+                color: #428bca;
+                font-size: 18px;
+            }
+
+        @media (max-width: 768px) {
+            .dropdown-menu-large {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+                .dropdown-menu-large > li {
+                    margin-bottom: 30px;
+                }
+
+                    .dropdown-menu-large > li:last-child {
+                        margin-bottom: 0;
+                    }
+
+                .dropdown-menu-large .dropdown-header {
+                    padding: 3px 15px !important;
+                }
+        }
+
+        .dropdown-menu {
+            left: auto;
+        }
+
+        .dropdown-menu-large {
+            margin-left: 16px;
+            margin-right: 16px;
+            padding: 20px 0px;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <%
+        bool isBlankMode = false;
+        if (Request.QueryString["BlankMode"] != null)
+        {
+            isBlankMode = (Request.QueryString["BlankMode"].ToString().Trim() == "1");
+        }
+    %>
+
+
+    <%
+        if (!isBlankMode)
+        {
+    %>
+
+    <div class="navbar navbar-inverse" style="border-radius: 0;">
+        <div class="navbar-inner">
+            <div class="container-fluid" style="padding: 9px; padding-left: 20px; padding-right: 20px;">
+                <a class="brand add-on add-on-dark" href="https://ciforicraf.ocs.cgiar.org/">
+                    <span style="display: inline-block;">
+                        <img src="<%=Page.ResolveUrl("~/assets/image/logo_white.png") %>" width="107" height="31"></img>
+                    </span>
+                </a>
+                <div class="nav pull-right">
+                    <div class="navbar-form">
+                        <div class="input-append">
+                            <div class="collapsibleContent">
+                                <a class="" href="/Employee/Profile?emp_user_id=<%=userId%>" title="Your Profile">
+                                    <span id="profile" class="add-on add-on-mini add-on-dark">
+                                        <i class="icon-user"></i>
+                                        <span class="username"><%=UserFullName%></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="mmenu">
+            <div class="container-fluid">
+                <nav class="nav-main mega-menu">
+                    <ul class="menu main-menu">
+
+                        <li>
+                            <a href="/Workspace" target="_self">TASKS</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">ABOUT CIFOR-ICRAF</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">General Information</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/About-CIFOR-ICRAF-Merger.aspx" target="_blank">About CIFOR-ICRAF merger</a></li>
+                                        <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/CIFOR-ICRAF-Merger-FAQs.aspx" target="_blank">FAQ</a></li>
+                                        <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/CIFOR-ICRAF-Integrated-Leadership-Team-(ILT).aspx" target="_blank">Integrated Leadership Team</a></li>
+                                        <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/CIFORICRAF%2020202030%20Strategy/Forms/AllItems.aspx?id=%2Fsites%2FCIFOR%2DICRAF%2Finstitutional%2FCIFORICRAF%2020202030%20Strategy%2FCIFOR%2DICRAF%2DStrategy%20Document%2Epdf&parent=%2Fsites%2FCIFOR%2DICRAF%2Finstitutional%2FCIFORICRAF%2020202030%20Strategy" target="_blank">Strategic documents</a></li>
+                                        <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/CIFOR-ICRAF-Vision-and-Mission.aspx" target="_blank">Vision and mission</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/Board-Meetings.aspx" target="_blank">BOT</a></li>
+
+                                <li><a href="/Employee/Index" target="_self">Employee directory</a></li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="test" href="javascript:void(0)" target="_self">Forms and Template</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/CIFOR-ICRAF-Forms-and-Templates.aspx" target="_blank">CIFOR-ICRAF</a></li>
+                                        <li><a href="https://my.cifor.org/Workspace/Forms.aspx" target="_blank">CIFOR</a></li>
+                                        <li><a href="https://intranet.worldagroforestry.org/services/icraf-forms" target="_blank">ICRAF</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/Global-Staff-Consultation.aspx" target="_self">Global staff consultations</a></li>
+
+                                <li class="dropdown-submenu">
+                                    <a href="javascript:void(0)" target="_self">Guidelines and Toolkits</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/Guidelines%20and%20Toolkits.aspx" target="_self">CIFOR-ICRAF</a></li>
+                                        <li><a href="https://my.cifor.org/Workspace/p/Pages/Guidelines-and-Toolkits.aspx" target="_blank">CIFOR</a></li>
+                                        <li><a href="javascript:void(0)" target="_self">ICRAF</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a href="javascript:void(0)" target="_self">Policies</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/CIFOR-ICRAF-POLICIES.aspx" target="_blank">CIFOR-ICRAF</a></li>
+                                        <li><a href="https://my.cifor.org/Workspace/Policies.aspx" target="_blank">CIFOR</a></li>
+                                        <li><a href="https://intranet.worldagroforestry.org/about-us/icraf-policies" target="_blank">ICRAF</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">MERGER INFORMATION</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Pages/Merger-email-corresponcences" target="_self">Merger email corespondences</a></li>
+                                <li><a href="/sharepointdemo/mergerdoc" target="_self">Merger documents</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">SITES</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://my.cifor.org" target="_blank">myCIFOR</a></li>
+                                <li><a href="https://intranet.worldagroforestry.org/" target="_blank">ICRAF intranet</a></li>
+                                <li><a href="https://icraf.ocs.cgiar.org/agresso/Default.aspx" target="_blank">OCS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" target="_self">BUSINESS PROCESSES</a>
+                            <ul class="dropdown-menu" style="width: 100.2%; left: auto; right: -1px;">
+                                <li>
+                                    <div class="mega-menu-content row-fluid">
+
+                                        <div class="col-sm-3">
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <h6 class="m-weight-600 m-margin-bottom-0"><a style="color: inherit" href="javascript:void(0);">Reports</a></h6>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="https://ciforicraf.ocs.cgiar.org/sporenderpage?url=https%3A%2F%2Fcgiar.sharepoint.com%2Fsites%2FCIFOR-ICRAF%2FCIFOR-ICRAF-Staging%2FSitePages%2FCIFOR-%26-ICRAF-Dashboard-Reports.aspx&isLoadSharepoint=1" target="_blank">Dashboard</a></li>
+                                                        <li><a href="/Pages/Financial-reports" target="_self">Financial report(s)</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <h6 class="m-weight-600 m-margin-bottom-0"><a style="color: inherit" href="javascript:void(0);">Project management</a></h6>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="/PM/Programme/ListOfProgramme" target="_self">Programme</a></li>
+                                                        <li><a href="/PM/GrantAgreement/ListOfGrantAGreement" target="_self">Grant agreements</a></li>
+                                                        <li><a href="/pm/projectstartup/listofproject" target="_self">Projects</a></li>
+                                                        <li><a href="/PM/PartnerDueDiligence/ListOfPartnerDueDiligence" target="_self">Partner due diligence</a></li>
+                                                        <li><a href="/PM/partnerloa/ListOfLoAPartner" target="_self">Partner LoA</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <h6 class="m-weight-600 m-margin-bottom-0"><a style="color: inherit" href="javascript:void(0);">Resource mobilization</a></h6>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="/RM/Funder/ListOfFunders?listfunder=2" target="_self">Funders</a></li>
+                                                        <li><a href="/RM/FundingOpportunity/ListOfFundingOpportunities" target="_self">Funding opportunities</a></li>
+                                                        <li><a href="/RM/GrantApplication/ListOfGrantApplication#tabPipeline" target="_self">Grant applications and pipeline</a></li>
+                                                        <li><a href="/RM/Funder/Calendar" target="_self">Resource Mobilization Calendar</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <ul>
+                                                <li>
+                                                    <h6 class="m-weight-600 m-margin-bottom-0"><a style="color: inherit; font-weight: 600;" href="/RM/Funder/Calendar">CIFOR-ICRAF Calendar</a></h6>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <a href="https://cgiar.sharepoint.com/sites/CIFOR-ICRAF/institutional/SitePages/COVID-19.aspx" target="_blank">COVID-19 ADVISORY</a>
+                        </li>
+
+                    </ul>
+                    <asp:Literal ID="MainMenu" runat="server"></asp:Literal>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <% } %>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,632 @@
+/*--------------------------------------------
+
+        THE KAMAREL admin theme v1.2
+
+          main css responsive file
+
+created by Tatto @ - matodrlicka@gmail.com
+
+----------------------------------------------*/
+@media (max-width: 1370px) {
+    .timeline {
+        width: 600px;
+    }
+
+    .timeline li {
+        width: 263px;
+    }
+}
+
+@media (max-width: 1170px) {
+
+    .content {
+
+    }
+
+    h1.page404 {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    h1.page404.nextLine {
+        font-size: 40px;
+        margin: -60px 0 0 50px;
+    }
+
+    h1.heading404 {
+        font-size: 170px;
+    }
+
+    h4.subheading404 {
+        font-size: 52px;
+        margin-left: 320px;
+        margin-top: -73px;
+    }
+
+    .imgMask i {
+        font-size: 40px;
+        top: 37%;
+    }
+
+}
+
+@media (max-width: 979px) {
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+        padding: 0px;
+    }
+
+    .span3 .containerHeadline h2 {
+        font-size: 11px;
+    }
+
+    .imgMask i {
+        font-size: 30px;
+        top: 34%;
+    }
+
+    /*li.heading h1 {
+        margin-left: 20px;
+        opacity: .4;
+        font-size: 38px;
+        margin-top: 8px;
+    }*/
+    .timelineHeading {
+        margin: 0;
+    }
+
+    .timeline {
+        background: url(../img/timeline.png) 55px 0 repeat-y;
+        padding-left: 85px;
+        padding-right: 5px;
+        width: auto;
+    }
+
+    .timeline.active {
+        background: url(../img/timeline-active.png) 55px 0 repeat-y;
+    }
+
+    .timeline li {
+        float: left;
+        width: 100%;
+        margin: 0 0 10px 0;
+        text-align: left;
+    }
+
+    .timeline li:nth-of-type(odd) {
+        margin: 0 0 10px 0;
+    }
+
+    .timeline li:nth-of-type(even) {
+        margin: 0 0 10px 0;
+        float: left;
+    }
+
+    .timeline li:after {
+        border-width: 8px 8px 8px 0;
+        border-color: transparent #d9d9d9 transparent transparent;
+        left: -8px;
+    }
+
+    .timeline.active li.reminder:after {
+        border-color: transparent #33B5E5 transparent transparent;
+    }
+
+    .timeline.active li.appointment:after {
+        border-color: transparent #FF4444 transparent transparent;
+    }
+
+    .timeline.active li.note:after {
+        border-color: transparent #99CC00 transparent transparent;
+    }
+
+    .timeline.active li.meeting:after {
+        border-color: transparent #FFBB33 transparent transparent;
+    }
+
+    .timeline li .pointer {
+        right: auto;
+        left: -40px;
+    }
+
+    .timeline li .pointer i {
+        margin-right: 0;
+        margin-left: 7px;
+    }
+
+    .timeline li time {
+        right: auto;
+        left: -85px;
+    }
+
+    .timeline li .header .day {
+        float: left;
+        margin-left: 0;
+        margin-right: 3px;
+    }
+
+    .timeline li .header .eventType {
+        right: 5px;
+    }
+
+}
+
+@media (max-width: 856px) {
+
+    ul.chartContainers li:first-child {
+        margin-right: 0;
+    }
+
+    ul.chartContainers li:last-child {
+        margin-left: 0;
+    }
+
+    .row-fluid [class*="span6"] {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .row-fluid [class*="span6"] {
+        margin-left: 0;
+    }
+
+    .span3 .containerHeadline h2 {
+        font-size: 9px;
+    }
+
+    .imgMask i {
+        font-size: 30px;
+        top: 28%;
+    }
+
+    .mailHeader ul {
+        list-style-type: none;
+        margin: 0;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .mailHeader ul.mailHeaderLeft {
+        min-width: 60px;
+    }
+
+    .mailHeader ul li {
+        line-height: 18px;
+    }
+
+    .mailBody p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .mailBody ul.attachments li {
+        font-size: 10px;
+    }
+
+    .mailBody ul.attachments .attActions {
+        font-size: 11px;
+    }
+
+    .west {
+        min-width: 150px;
+    }
+
+    .mailVertical ul.inbox li i {
+        float: none;
+        font-size: 14px;
+        margin: 0 60px 0 0;
+    }
+
+    .mailVertical ul.inbox li {
+        padding: 5px 5px 20px 5px;
+        position: relative;
+    }
+
+    .mailVertical ul.inbox li h1,
+    .mailVertical ul.inbox li h2 {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .mailVertical ul.inbox li h2 {
+        word-break: break-all;
+    }
+
+    .mailVertical ul.inbox span.mailDelivered,
+    .mailVertical ul.inbox span.mailDeliveredTime {
+        float: none;
+        display: block;
+        position: absolute;
+        bottom: 1px;
+    }
+
+    .mailVertical ul.inbox span.mailDelivered {
+        left: 5px;
+    }
+
+    .mailBody ul.attachments .attActions {
+        float: none;
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        margin-bottom: 10px;
+    }
+
+    table.inbox {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .input-large, .input-xlarge, .input-xxlarge, input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
+        min-height: 21px;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    body {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .containerHeadline form {
+        margin: 0 0px 3px 0;
+    }
+
+    .span3 ul.the-icons {
+        font-size: 10px;
+        margin: 0 0 10px 5px;
+    }
+
+    [class*="span"],
+    .uneditable-input[class*="span"],
+    .row-fluid [class*="span"] {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .span12,
+    .row-fluid .span12 {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .page404-container {
+        padding-bottom: 1px;
+    }
+
+    h1.page404 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    h1.page404.nextLine {
+        font-size: 30px;
+        margin: -60px 0 0 50px;
+    }
+
+    h1.heading404 {
+        font-size: 100px;
+    }
+
+    h4.subheading404 {
+        font-size: 35px;
+        margin-left: 190px;
+        margin-top: -77px;
+    }
+
+    p.first-line {
+        margin-top: 60px;
+    }
+
+    .span3 .containerHeadline h2 {
+        font-size: 14px;
+    }
+
+    .imgMask i {
+        font-size: 120px;
+        top: 35%;
+    }
+
+    .floatingContainer {
+        position: static;
+    }
+
+    .nav-collapse, .nav-collapse.collapse {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .navbar .btn-navbar {
+        display: block;
+    }
+
+    .mainmenu ul.nav li {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a, .mainmenu ul.nav ul.dropdown-menu .dropdown-submenu > .dropdown-menu {
+        border-radius: 0;
+    }
+
+    .dropdown-submenu > .dropdown-menu {
+        margin-top: 1px;
+        background: #333333;
+    }
+
+    .mainmenu ul.nav ul.dropdown-menu .dropdown-submenu > .dropdown-menu {
+        background: #333333;
+    }
+
+    .content .sidebar-dark {
+        display: none;
+    }
+
+    .navbar-fixed-top {
+        position: static;
+    }
+
+    .content {
+        padding-top: 44px;
+    }
+
+    div.mainmenu {
+        z-index: 100000;
+    }
+
+    .quick-link-button {
+        float: right;
+        width: 50%;
+        display: block;
+    }
+
+    .menu-btn-right {
+        float: left;
+        width: 50%;
+        display: block;
+    }
+
+    .mainmenu ul.nav {
+        border-top: 0
+    }
+
+    .quick-link-button a, .menu-btn-right a {
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 10px 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .quick-link-button a, .sidebar-dark {
+        background: none repeat scroll 0 0 #2B2B2B;
+        margin-bottom: 0;
+    }
+
+    .quick-link-button a:hover, .menu-btn-right a:hover {
+        text-decoration: none;
+        color: #eaeaea;
+    }
+
+    .menu-btn-right {
+        background: none repeat scroll 0 0 #545a5f;
+    }
+}
+
+@media (max-width: 700px) {
+    .btn {
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .titleLine {
+        height: 80px;
+    }
+
+    .titleLine .titleIcon {
+        height: 103px;
+    }
+
+    .titleLine ul {
+        margin: 0;
+    }
+
+    li.heading h1 {
+        margin: 0;
+        opacity: .4;
+        font-size: 24px;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .titleLine ul.titleLineHeading {
+        margin-top: -87px;
+        text-align: center;
+    }
+
+    .titleLine ul.titleLineOnRight.pull-right {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding-bottom: 4px;
+    }
+
+    .titleLine ul.titleLineOnRight.pull-right li {
+        text-align: left;
+    }
+
+    ul.breadcrumb {
+        height: auto;
+        text-align: center;
+    }
+
+    ul.breadcrumb li.moveDown {
+        float: none;
+        display: list-item;
+    }
+
+    ul.breadcrumb span.date.pull-right,
+    ul.breadcrumb span.time.pull-right {
+        float: none;
+    }
+
+    ul.breadcrumb span.time {
+        margin-right: 10px;
+        display: list-item;
+    }
+
+    ul.masterActions li {
+        margin: 0 20px 20px 0;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .content {
+        padding-left: 0;
+    }
+
+    .navbar .collapseHolder {
+        display: inline;
+    }
+
+    .collapsibleContent {
+        display: none;
+    }
+
+    .sidebarContent h1 {
+        display: none;
+    }
+
+    a.showCollapsedSidebarMenu {
+        display: inline;
+    }
+
+    a.showCollapsedSidebarMenu h1 {
+        display: block;
+    }
+
+    .modal.fade.in {
+        right: 5%;
+        left: auto;
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 620px) {
+
+    ul.breadcrumb div {
+        margin-top: -20px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    ul.chartContainers li {
+        min-width: 250px;
+    }
+
+    div.chartSummary {
+        font-size: 20px;
+        margin-left: 2px;
+    }
+
+    .chartLegendContainer h2, .chartSummaryContainer h2 {
+        font-size: 10px;
+        line-height: 9px;
+    }
+
+    .chartSummaryContainer h2 {
+        line-height: 12px;
+    }
+
+    .chartLegendContainer p, .chartSummaryContainer p {
+        font-size: 10px;
+        line-height: 9px;
+    }
+
+    div.chartLegend {
+        height: 18px;
+        width: 10px;
+    }
+
+    .floatingBox div.floatingBoxMenu ul li {
+        padding-right: 2px;
+    }
+
+    .floatingBox div.floatingBoxMenu ul li a {
+        font-size: 10px;
+    }
+
+    .floatingBox.table {
+        overflow: auto;
+    }
+
+    .containerHeadline.tableHeadline .input-append {
+        margin-top: 10px;
+    }
+
+    .containerHeadline.tableHeadline form {
+        text-align: left;
+    }
+
+    .containerHeadline.tableHeadline i {
+        float: left;
+    }
+
+    .containerHeadline.tableHeadline h2 {
+        float: none;
+    }
+
+    .tablesorter-pager {
+        min-width: 340px;
+    }
+
+    .fc-header-right {
+        font-size: 9px;
+    }
+
+    .fc-button.fc-state-default {
+        padding: 8px 3px 7px 3px
+    }
+
+    .fc-text-arrow {
+        line-height: 17px;
+    }
+
+    .imgMask i {
+        font-size: 60px;
+        top: 36%;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .navbar-form .input-append input, .navbar-form .input-prepend input {
+        width: 70px;
+    }
+
+}
+
